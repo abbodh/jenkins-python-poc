@@ -58,7 +58,7 @@ pipeline {
             steps {
                 dir('./Release/' + params.RELEASE + '/' + params.STEPNAME + '/') {
                     sh("""
-                        docker run --name "python-sample"
+                        docker run python-sample
                     """)
                 }
             }
