@@ -17,7 +17,7 @@ pipeline {
                                 name: 'RELEASE'
                             ),
                             string(
-                                defaultValue: 'Day1Pre',
+                                defaultValue: 'LeadImport',
                                 name: 'STEPNAME'
                             )
                         ])
