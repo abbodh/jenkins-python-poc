@@ -1,5 +1,3 @@
-FROM python:3.9.10-slim-buster
-
+FROM python:latest
 COPY call-endpoints.py ./
-
 CMD python call-endpoints.py --env ${ENVIRONMENT}
