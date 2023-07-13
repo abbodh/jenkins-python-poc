@@ -1,5 +1,5 @@
-
-#script will determine the url to call based on the input ENVIRONMENT
+# script will determine the url to call based on the input ENVIRONMENT which is read by sys.args
+import sys
 import requests
 api_url = "http://api.open-notify.org/astros.json"
 response = requests.get(api_url)
