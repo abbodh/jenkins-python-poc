@@ -5,7 +5,7 @@ import requests
 parser = argparse.ArgumentParser()
 args=parser.parse_args()
 
-print("running for environment: " + args.env)
+print("running for environment: " + args.ENVIRONMENT)
 
 print("hit url: " + api_url)
 api_url = "http://api.open-notify.org/astros.json"
