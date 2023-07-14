@@ -2,7 +2,9 @@
 from args import argstoparse
 import requests
 
-print("running for environment: " + args.environment)
+arg = argstoparse()
+
+print("running for environment: " + arg.environment)
 
 print("hit url: " + api_url)
 api_url = "http://api.open-notify.org/astros.json"
