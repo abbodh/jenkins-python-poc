@@ -6,8 +6,9 @@ arg = argstoparse()
 
 print("running for environment: " + arg.environment)
 
+api_url = "http://api.open-notify.org/astros.json?env=" + arg.environment
 print("hit url: " + api_url)
-api_url = "http://api.open-notify.org/astros.json"
+
 response = requests.get(api_url)
 responseStatusCode = str(response.status_code)
 jsonResponse = response.json()
