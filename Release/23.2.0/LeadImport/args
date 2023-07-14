@@ -1,0 +1,8 @@
+import argparse
+
+
+def argstoparse():
+    parser = argparse.ArgumentParser(allow_abbrev=False)
+    my_parser.add_argument('--environment', action='store', type=str, required=True)
+    args = my_parser.parse_args()
+return args
