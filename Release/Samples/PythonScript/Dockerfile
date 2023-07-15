@@ -1,5 +1,7 @@
-FROM python:3.9.10-slim-buster
+FROM python:latest
 
-COPY sample.py
+RUN pip install requests
 
-CMD python sample.py --env ${ENVIRONMENT}
+COPY args.py ./
+COPY call-endpoints.py ./
+ENTRYPOINT [ "python", "call-endpoints.py"]
