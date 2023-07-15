@@ -27,4 +27,4 @@ request_body = {
 
 print("post api url: " + post_api_url)
 post_response = requests.post(post_api_url, json=request_body)
-print("post api response: " + post_response.status_code)
+print("post api response: " + str(post_response.status_code))
