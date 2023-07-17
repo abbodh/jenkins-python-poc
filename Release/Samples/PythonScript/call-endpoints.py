@@ -24,7 +24,8 @@ request_body = {
     "body": "bar",
     "userId": 1,
   }
+headers = {"Content-Type": "application/json; charset=utf-8"}
 
 print("post api url: " + post_api_url)
-post_response = requests.post(post_api_url, json=request_body)
+post_response = requests.post(post_api_url, headers=headers, json=request_body)
 print("post api response: " + str(post_response.status_code))
